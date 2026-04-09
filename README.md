@@ -6,13 +6,13 @@ self-rag (self-reflective retrieval-augmented generation) module for loan faqs, 
 
 ## what this module does
 
-when a user asks a policy/faq/sales question — e.g. *"what documents are required?"*, *"is foreclosure allowed?"*, *"what are the charges?"* — the module:
+when a user asks a policy/faq/sales question - e.g. *"what documents are required?"*, *"is foreclosure allowed?"*, *"what are the charges?"* - the module:
 
-1. **gates** — decides whether retrieval is necessary (intent classification)
-2. **retrieves** — pulls the most relevant chunks from the approved knowledge base via faiss
-3. **drafts** — generates a response using groq llm grounded on retrieved content
-4. **self-critiques** — checks whether the response is grounded (no unsupported claims)
-5. **revises** — removes unsupported claims, adds mandatory disclaimers
+1. **gates** - decides whether retrieval is necessary (intent classification)
+2. **retrieves** - pulls the most relevant chunks from the approved knowledge base via faiss
+3. **drafts** - generates a response using groq llm grounded on retrieved content
+4. **self-critiques** - checks whether the response is grounded (no unsupported claims)
+5. **revises** - removes unsupported claims, adds mandatory disclaimers
 6. **falls back** safely if retrieval confidence is low
 
 ## tech stack
@@ -45,7 +45,6 @@ self_rag/
 │   └── api/
 │       └── routes_rag.py       # /api/rag/* endpoints
 ├── tests/                      # test suite
-├── data/faiss_index/           # faiss artifacts (generated)
 ├── .env                        # environment config
 ├── requirements.txt
 └── README.md
