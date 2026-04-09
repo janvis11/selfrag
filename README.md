@@ -143,10 +143,3 @@ curl -X POST http://localhost:8001/api/rag/query \
 pytest tests/ -q
 ```
 
-## guardrails
-
-all self-rag answers **must**:
-- never promise approval
-- never fabricate rates/fees/charges
-- always include relevant disclaimers
-- fall back safely when retrieval confidence is low
