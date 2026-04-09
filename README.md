@@ -1,4 +1,4 @@
-# self-rag module — tata capital bfsi chatbot
+# self-rag module - tata capital bfsi chatbot
 
 self-rag (self-reflective retrieval-augmented generation) module for loan faqs, policy explanations, fees/documentation info, and sales objection handling.
 
@@ -127,7 +127,7 @@ curl -X POST http://localhost:8001/api/rag/query \
 
 | variable | default | description |
 |----------|---------|-------------|
-| `GROQ_API_KEY` | — | your groq api key (required) |
+| `GROQ_API_KEY` | - | your groq api key (required) |
 | `GROQ_MODEL` | `llama-3.3-70b-versatile` | groq model name |
 | `VECTOR_STORE` | `faiss` | vector store backend |
 | `CHUNK_TOKENS` | `500` | token chunk size |
