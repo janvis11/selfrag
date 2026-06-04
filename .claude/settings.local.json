@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install:*)",
+      "Bash(python -c \"from app.main import app; print\\('FastAPI backend OK'\\)\")",
+      "Bash(streamlit run:*)",
+      "Bash(curl -s http://localhost:8501 -o /dev/null)",
+      "WebFetch(domain:web.application)",
+      "Bash(rm -rf D:\\\\self_rag\\\\frontend)",
+      "Bash(mkdir -p D:\\\\self_rag\\\\frontend\\\\static\\\\css D:\\\\self_rag\\\\frontend\\\\static\\\\js)",
+      "Bash(python:*)",
+      "Bash(timeout 5 curl -s http://localhost:8001/health)",
+      "Bash(curl -s http://localhost:8001/)",
+      "Bash(curl -s http://localhost:8001/static/js/app.js)"
+    ]
+  }
+}
